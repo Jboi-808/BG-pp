@@ -10,6 +10,15 @@ body {
     margin-bottom: 10px;
   }
   
+  button {
+    margin: 2px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+  }
+  
   .grid {
     display: grid;
     grid-template-columns: repeat(20, 32px);
@@ -24,6 +33,7 @@ body {
     border: 1px solid #ccc;
   }
   
+  /* Block Styles */
   .grass {
     background-color: green;
   }
@@ -34,5 +44,18 @@ body {
   
   .wood {
     background-color: sienna;
+  }
+  
+  .dirt {
+    background-color: #5a381e;
+  }
+  
+  .leaves {
+    background-color: rgba(34, 139, 34, 0.6); /* semi-transparent green */
+  }
+  
+  .glass {
+    background-color: rgba(135, 206, 235, 0.3); /* transparent light blue */
+    border: 1px solid rgba(135, 206, 235, 0.5);
   }
   

@@ -10,7 +10,11 @@ for (let i = 0; i < 400; i++) {
   const cell = document.createElement('div');
   cell.classList.add('cell');
   cell.addEventListener('click', () => {
-    cell.className = 'cell ' + selectedBlock;
+    if (selectedBlock === 'delete') {
+      cell.className = 'cell';
+    } else {
+      cell.className = 'cell ' + selectedBlock;
+    }
   });
   grid.appendChild(cell);
 }
